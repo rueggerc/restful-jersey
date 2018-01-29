@@ -3,9 +3,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Gradle Web</title>
+<title>Jersey RESTful App</title>
 </head>
 <body>
-<h1>Jersey REST App</h1>
+<h1>Welcome to Jersey RESTful App</h1>
 </body>
 </html>

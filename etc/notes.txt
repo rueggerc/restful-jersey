@@ -1,1 +1,7 @@
 Development Notes
+
+Context Root:
+http://localhost:8080/restful-jersey/
+
+# Get Books
+http://localhost:8080/restful-jersey/rest/books/books
