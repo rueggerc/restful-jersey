@@ -5,3 +5,16 @@ http://localhost:8080/restful-jersey/
 
 # Get Books
 http://localhost:8080/restful-jersey/rest/books/books
+
+
+# Build
+docker image build -t restjersey:latest .
+
+# Run
+docker container run -d --name rest1 -p 8088:8080 restjersey:latest
+
+# Stop
+docker container stop rest1
+
+# Remove
+docker rm rest1
