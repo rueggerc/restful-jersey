@@ -20,6 +20,7 @@ import javax.ws.rs.core.UriInfo;
 import org.apache.log4j.Logger;
 
 import com.rueggerllc.rest.beans.Book;
+import com.rueggerllc.rest.beans.BookDetails;
 
 @Path("/books")
 @Singleton
@@ -134,6 +135,10 @@ public class BookResource {
 			book.setTitle("Title" + i);
 			book.setNumberOfPages(311+i);
 			book.setAuthor("Author"+i);
+			BookDetails details = new BookDetails();
+			details.setDescription("Stupendous!");
+			details.setRating(5);
+			book.setDetails(details);
 			books.add(book);
 		}
 	}

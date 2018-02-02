@@ -6,6 +6,7 @@ public class Book {
 	private String title;
 	private String author;
 	private int numberOfPages;
+	private BookDetails details;
 	
 	public int getId() {
 		return id;
@@ -34,12 +35,19 @@ public class Book {
 		this.numberOfPages = numberOfPages;
 	}
 	
+	public BookDetails getDetails() {
+		return details;
+	}
+	public void setDetails(BookDetails details) {
+		this.details = details;
+	}
 	public String toString() {
 		StringBuilder buffer = new StringBuilder();
 		buffer.append("Book.id: " + id);
 		buffer.append("\nBook.title: " + title);
 		buffer.append("\nBook.author: " + author);
 		buffer.append("\nBook.numberOfPages: " + numberOfPages);
+		buffer.append("\nBook.details: " + details);
 		return buffer.toString();
 	}
 	
